@@ -6,12 +6,16 @@ html {
 
 .container {
   max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .head {
   background-image: url('glasses-bg.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-position-x: 35%;
   background-size: cover;
   height: 30rem;
   display: flex;
@@ -22,15 +26,23 @@ html {
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
-  /* position: relative;
-  top: 1rem; */
+  /* position: relative;*/
+  margin-top: 1rem;
 }
 .logo {
   color: white;
   display: flex;
   align-items: center;
+  height: 1.5rem;
+}
+.glasses {
+  background: url('logo-white.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 1.5rem;
+  width: 100%;
+  /* display: inline-block; */
 }
 .logo img {
   height: 1.5rem;
@@ -53,11 +65,38 @@ h1 {
   color: white;
   text-decoration: none;
 }
-.callout {
+
+.calloutCopy {
   margin-top: 10rem;
-  padding: 1.5rem 5rem;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 2rem;
+}
+.calloutCopy p {
   background-color: white;
+  padding: 1.5rem 5rem;
+
   line-height: 1.2;
   font-size: 2rem;
-  align-self: flex-end;
+}
+.icons {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 5rem;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+.icon img {
+  max-width: 3.5rem;
 }
