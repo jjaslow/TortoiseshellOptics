@@ -2,6 +2,14 @@ html {
   font-size: 18px;
   line-height: 1.4;
   font-family: Helvetica;
+  /* background-color: azure; */
+}
+.small {
+  display: none;
+}
+
+p {
+  line-height: 1.4;
 }
 
 .container {
@@ -23,9 +31,10 @@ html {
 }
 .topNav {
   background-color: cadetblue;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem 1rem 2rem;
   display: flex;
   justify-content: space-between;
+
   /* position: relative;*/
   margin-top: 1rem;
 }
@@ -33,18 +42,8 @@ html {
   color: white;
   display: flex;
   align-items: center;
-  height: 1.5rem;
 }
-.glasses {
-  background: url('logo-white.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 1.5rem;
-  width: 100%;
-  /* display: inline-block; */
-}
-.logo img {
+.logo1 {
   height: 1.5rem;
 }
 h1 {
@@ -59,7 +58,7 @@ h1 {
   justify-content: flex-end;
 }
 .nav li {
-  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .nav a {
   color: white;
@@ -77,7 +76,6 @@ h1 {
 .calloutCopy p {
   background-color: white;
   padding: 1.5rem 5rem;
-
   line-height: 1.2;
   font-size: 2rem;
 }
@@ -86,6 +84,8 @@ h1 {
   margin: 0 auto;
   justify-content: space-around;
   margin-top: 3rem;
+  height: 8rem;
+  width: 27rem;
 }
 .icon {
   display: flex;
@@ -99,4 +99,126 @@ h1 {
 }
 .icon img {
   max-width: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem auto;
+}
+
+.content h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding: 0.5rem 4rem 0.5rem 1.25rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.philosophy,
+.appointments {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer {
+  margin: 0 auto;
+  margin-top: 5rem;
+  background-color: azure;
+}
+.footer div {
+  padding: 4rem;
+  display: flex;
+}
+.footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .topNav {
+    max-width: 100%;
+    margin-top: 0;
+  }
+  .head {
+    height: 22rem;
+    background-position-x: 25%;
+  }
+  .calloutCopy {
+    margin-top: 5rem;
+    left: 0rem;
+    margin-right: 2rem;
+    width: auto;
+  }
+  .calloutCopy p {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .small {
+    display: inline-block;
+  }
+  .large {
+    display: none;
+  }
+  .head {
+    height: 17rem;
+    background-position-x: 20%;
+  }
+  .calloutCopy {
+    margin-top: 9rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  .calloutCopy p {
+    padding: 1rem 0.25rem;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .footer div {
+    justify-content: center;
+  }
+  .footer img {
+    padding-right: 0;
+  }
+  .icons {
+    flex-direction: column;
+    height: auto;
+    margin-top: 3.77rem;
+    align-items: center;
+    width: auto;
+  }
+  .icon {
+    margin-bottom: 1.54rem;
+  }
+  .content {
+    margin-top: 2.23rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .philosophy,
+  .appointments {
+    width: 100%;
+    align-items: stretch;
+  }
+  .content h2 {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .content p {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.77rem;
+  }
+  .philosophy {
+    margin-bottom: 4rem;
+  }
 }
